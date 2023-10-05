@@ -188,7 +188,6 @@ address {
     color: #fff; 
 }
 
-
 .card_type_film {
     background-image: url(../images/card-lot-01.jpg);
     background-size: cover;
@@ -208,12 +207,6 @@ address {
     text-decoration: none;
     display: block;
     height: 100%;
-}
-
-.lots__heading {
-    font-size: 40px;
-    font-weight: 700;
-    text-transform: uppercase;
 }
 
 .card__overlay {

@@ -1,1 +1,344 @@
-/* место для вашего кода */
+address {
+    font-style: normal;
+}
+
+.header {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.3px;
+    display: flex;
+    justify-content: space-between;
+    margin: 92px 53px 96px 53px;
+}
+
+.header__menu {
+    margin-top: 43px;
+    margin-bottom: 43px;
+}
+
+
+.header__link-list {
+    letter-spacing: 0.7px;
+    list-style: circle;
+    line-height: normal;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    text-underline-offset: 4px;
+}
+
+.header__link-list-item-no-line {
+    text-decoration: none;
+}
+
+.header__links-list-item_no-bullit {
+    list-style: none;
+    text-decoration: none;
+}
+
+.header__logo {
+    width: 143px;
+    height: 105px;
+    margin-right: 155px;
+    margin-top: -3px;
+}
+
+.address {
+    margin-top: 5px;
+    margin-bottom: 7px;
+    letter-spacing: 0.6px;
+    text-underline-offset: 4px;
+}
+
+.cover {
+    background-image: url(../images/cover.jpg);
+    background-size: cover;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #000;
+    opacity: 0.6;
+    z-index: 20;
+}
+
+.cover__title {
+    font-size: 102px;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 30;
+}
+
+.alignet-text {
+    margin-top: 180px;
+    margin-left: 55px;
+    letter-spacing: 35px; 
+}
+
+.letter__o {
+    margin-left: 30px;
+}
+
+.alignet-text_center {
+    text-align: center;
+    margin-left: -30px;
+    margin-top: 13px;
+    letter-spacing: 35px;
+}
+
+.letter__e {
+    margin-left: 34px;
+}
+
+.alignet-text_right {
+    text-align: right;
+    margin-top: 5px;
+    margin-right: 20px;
+    letter-spacing: 35px;
+}
+
+.letter__n {
+    margin-right: 30px;
+}
+
+.cover__description {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 30;
+}
+
+.cover__description-text {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-left: 445px; 
+    margin-top: 151px;
+    letter-spacing: 1px;
+    word-spacing: 16px;
+}
+
+.word__believed {
+    margin-left: 6px;
+}
+
+.bet-button {
+    position: relative;
+    z-index: 30;
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: transparent;
+    text-align: center;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-right: 52px;
+    margin-top: 137px;
+    margin-bottom: 50px;
+    width: 272px;
+    height: 55px;
+    letter-spacing: 1px;
+}   
+
+.lots {
+    margin: 192px 55px;
+}
+
+.lots__heading {
+    margin-left: 40px;
+    margin-bottom: 27px;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.lots__card-list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.lots__card-list-item {
+    width: 430px;
+    flex-grow: 1;
+    justify-content: space-between;
+    list-style: none;
+    z-index: 10px;
+}
+
+.card {
+    width: 450px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    color: #fff; 
+}
+
+
+.card_type_film {
+    background-image: url(../images/card-lot-01.jpg);
+    background-size: cover;
+}
+
+.card_type_book {
+    background-image: url(../images/card-lot-02.jpg);
+    background-size: cover;
+}
+
+.card_type_picture {
+    background-image: url(../images/card-lot-03.jpg);
+    background-size: cover;
+}
+
+.card-link {
+    text-decoration: none;
+    display: block;
+    height: 100%;
+}
+
+.lots__heading {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.card__overlay {
+    height: 480px;
+    width: 450px;
+}
+
+.card__title {
+    margin: 57px 40px 0 40px;
+    text-decoration: underline;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    flex-grow: 1;
+    z-index: 30;
+    line-height: 125%;
+    letter-spacing: 0.8px;
+    text-underline-offset: 2px;
+}
+
+.card-text {
+    margin: 0 40px 55px 40px;
+    font-size: 20px;
+    font-weight: 400;    
+    z-index: 30;
+    line-height: 125%;
+    letter-spacing: 0.6px;
+}
+
+.lots__look-more-link {
+    margin-top: 30px;
+    margin-left: 40px;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    text-underline-offset: 5px;
+}
+
+.about {
+    margin-left: 55px;
+    display: grid;
+    grid-template-columns: 430px 980px;
+    grid-template-rows: 240px 460px;
+}
+
+.about__logo {
+    width: 250px;
+    height: 250px;
+    margin-left: 100px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.about__logo-image {
+    width: 148px;
+    height: 114px;
+}
+
+.about__column {
+    padding-top: 110px;
+    padding-left: 50px;
+}
+
+.about__title {
+    margin-bottom: 100px;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+}
+
+.about__text {
+    padding-top: 5px;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    word-spacing: 0.5px;
+}
+
+.about__text-margin {
+    margin-bottom: 25px;
+}
+
+.footer {
+    margin: 0 50px 90px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__address {
+    margin-top: 7px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 135%;
+}
+
+.footer__menu-list {
+    margin-top: 5px; 
+    font-size: 18px;
+    font-weight: 400;
+    list-style: none;
+    text-align: center;
+    letter-spacing: 0.8px;
+    text-underline-offset: 4px;
+}
+
+.footer__menu-link_active {
+    text-decoration: none;
+}
+
+.footer__social-list {
+    margin-top: 5px;
+    margin-right: 5px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 53px;
+}
+
+.footer__social-icon {
+    height: 48px;
+    width: 48px;
+}

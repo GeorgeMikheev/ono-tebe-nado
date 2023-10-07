@@ -8,7 +8,7 @@ address {
     line-height: 24.3px;
     display: flex;
     justify-content: space-between;
-    margin: 92px 51px;
+    margin: 92px 40px 92px 51px;
 }
 
 .header__menu {
@@ -27,7 +27,7 @@ address {
     text-underline-offset: 4px;
 }
 
-.header__link-list-item-no-line {
+.header__link-list-item-active {
     text-decoration: none;
 }
 
@@ -45,14 +45,14 @@ address {
 .address {
     margin-top: 5px;
     margin-bottom: 7px;
-    margin-right: 0;
     text-underline-offset: 4px;
+    width: 250px;
 }
 
 .cover {
     width: auto;
     background-image: url(../images/cover.jpg);
-    background-size: 757px 1440px;
+    background-size: 100%;
     color: #fff;
     position: relative;
     z-index: 10;
@@ -84,8 +84,8 @@ address {
     letter-spacing: 30px;
 }
 
-.letter__o {
-    margin-left: 28px;
+.letter-spacing-extended {
+    margin-left: 30px;
 }
 
 .alignet-text_center {
@@ -95,19 +95,11 @@ address {
     letter-spacing: 28px;
 }
 
-.letter__e {
-    margin-left: 34px;
-}
-
 .alignet-text_right {
     text-align: right;
     margin-top: 3px;
     margin-right: 17px;
     letter-spacing: 30px;
-}
-
-.letter__n {
-    margin-right: 30px;
 }
 
 .cover__description {
@@ -139,6 +131,7 @@ address {
     color: #fff;
     background-color: transparent;
     text-align: center;
+    font-family: inherit;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
@@ -149,6 +142,7 @@ address {
     margin-bottom: 50px;
     width: 257px;
     height: 52px;
+    cursor: pointer;
 }   
 
 .lots {
@@ -164,62 +158,62 @@ address {
 }
 
 .lots__card-list {
+    
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
     gap: 25px;
 }
 
 .lots__card-list-item {
     width: 430px;
     flex-grow: 1;
-    justify-content: space-between;
     list-style: none;
-    z-index: 10px;
 }
 
 .card {
-    width: 430px;
-    height: 450px;
+    min-height: 450px;
     display: flex;
     flex-direction: column;
-    min-height: 100%;
     color: #fff;
+    background-size: cover;
+    position: relative;
+    z-index: 10;
 }
 
 .card_type_film {
     background-image: url(../images/card-lot-01.jpg);
-    background-size: cover;
 }
 
 .card_type_book {
     background-image: url(../images/card-lot-02.jpg);
-    background-size: cover;
 }
 
 .card_type_picture {
     background-image: url(../images/card-lot-03.jpg);
-    background-size: cover;
 }
 
 .card-link {
+    text-decoration: none;
     display: block;
     height: 100%;
 }
 
 .card__overlay {
-    height: 450px;
-    width: 430px;
+    height: 100%;
+    width: 100%;
 }
 
 .card__title {
     margin: 50px 40px 0 40px;
     text-decoration: underline;
+    text-underline-offset: 2px;
     font-size: 22px;
     font-weight: 700;
     text-transform: uppercase;
     flex-grow: 1;
     z-index: 30;
-    text-underline-offset: 2px;
 }
 
 .card-text {
@@ -239,9 +233,10 @@ address {
 
 .about {
     margin-left: 50px;
-    display: grid;
-    grid-template-columns: 430px 910px;
-    grid-template-rows: 200px 460px;
+    display: flex;
+    flex-direction: row;
+    gap: 95px;
+    flex-wrap: wrap;
 }
 
 .about__logo {
@@ -255,7 +250,6 @@ address {
     justify-content: center;
 }
 
-
 .about__logo-image {
     width: 148px;
     height: 114px;
@@ -264,7 +258,7 @@ address {
 .about__column {
     padding-top: 100px;
     padding-left: 25px;
-}
+}    
 
 .about__title {
     margin-bottom: 100px;
@@ -274,29 +268,30 @@ address {
 }
 
 .about__text {
+    width: 885px;
     font-size: 20px;
     font-weight: 400;
-}
-
-.about__text-margin {
-    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 .footer {
-    margin: 0 50px 90px 50px;
+    margin: 179px 50px 90px 50px;
     display: flex;
     justify-content: space-between;
 }
 
 .footer__address {
-    margin-top: 7px;
+    margin-top: 0;
     font-size: 18px;
     font-weight: 400;
     line-height: 135%;
+    width: 250px;
 }
 
 .footer__menu-list {
-    margin-top: 8px;
+    margin-right: 7px;
     font-size: 18px;
     font-weight: 400;
     list-style: none;
@@ -309,7 +304,7 @@ address {
 }
 
 .footer__social-list {
-    margin-top: 7px;
+    margin-top: 0;
     list-style: none;
     display: flex;
     flex-direction: row;
